@@ -16,6 +16,15 @@
     border: none;
     cursor: pointer;
     transition: color 0.2s linear;
+
+    @media (max-width: 1050px) {
+        right: 10px;
+    }
+
+    @media (max-width: 950px) {
+        transform: translateY(-50%);
+        top: 36px;
+    }
 }
 
 .hamburger-button::before {

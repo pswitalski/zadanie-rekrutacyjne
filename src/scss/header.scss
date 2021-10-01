@@ -33,6 +33,10 @@
     &__button {
         @include text-button;
 
+        @media (max-width: 700px) {
+            font-size: 12px;
+        }
+
         @media (max-width: 500px) {
             display: none;
         }
