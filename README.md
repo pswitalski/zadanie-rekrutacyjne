@@ -1,5 +1,9 @@
 # Zadanie rekrutacyjne
 
+## Podgląd
+
+https://agitated-mayer-eb6712.netlify.app/
+
 ## Instalacja
 
 ```
