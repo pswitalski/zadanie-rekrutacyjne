@@ -9,9 +9,20 @@
     display: flex;
     align-items: center;
 
+    @media (max-width: 950px) {
+        position: static;
+        width: 100%;
+        height: fit-content;
+        padding: 5px;
+        background-color: hsla(0, 0%, 93%, 0.9);
+    }
 
     &__logo-container {
-        margin: 0 80px
+        margin: 0 80px;
+
+        @media (max-width: 600px) {
+            margin: 0 20px;
+        }
     }
 
     &__img {
@@ -21,6 +32,10 @@
 
     &__button {
         @include text-button;
+
+        @media (max-width: 500px) {
+            display: none;
+        }
     }
 
     &__button:hover {
