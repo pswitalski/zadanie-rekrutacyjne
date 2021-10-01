@@ -1,5 +1,30 @@
+@font-face {
+    font-family: 'Archia';
+    src: url('../fonts/Archia/Archia-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Archia';
+    src: url('../fonts/Archia/Archia-SemiBold.otf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Archia';
+    src: url('../fonts/Archia/Archia-Bold.otf');
+    font-weight: 700;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Archia', sans-serif;
+}
+
+button {
+    font-weight: 700;
 }
