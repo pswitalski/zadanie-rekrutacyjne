@@ -27,7 +27,9 @@
         text-decoration: none;
         color: white;
         margin: 12px 0;
-        transition: color 0.2s linear;
+        opacity: 0;
+        transform: scale(0.9);
+        transition: color 0.2s linear, opacity 0.4s linear, transform 0.4s linear;
 
         @media (max-width: 400px) {
             font-size: 40px;
@@ -40,6 +42,11 @@
 
     &__a:hover {
         color: #5C5C5C;
+    }
+
+    &__a--active {
+        opacity: 1;
+        transform: scale(1);
     }
 }
 
