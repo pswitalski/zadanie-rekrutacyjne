@@ -1,0 +1,29 @@
+@import './mixins.scss';
+
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 144px;
+    margin: 0 0 auto;
+    display: flex;
+    align-items: center;
+
+
+    &__logo-container {
+        margin: 0 80px
+    }
+
+    &__img {
+        width: 48px;
+        height: 60px;
+    }
+
+    &__button {
+        @include text-button;
+    }
+
+    &__button:hover {
+        @include text-button-hover;
+    }
+}

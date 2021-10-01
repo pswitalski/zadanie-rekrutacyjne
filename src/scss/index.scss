@@ -25,6 +25,5 @@ body {
     font-family: 'Archia', sans-serif;
 }
 
-button {
-    font-weight: 700;
-}
+@import './header.scss';
+@import './hero.scss';
