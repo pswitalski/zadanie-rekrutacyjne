@@ -1,3 +1,5 @@
+@import './mixins.scss';
+
 .hamburger-button {
     z-index: 2;
     font-weight: 600;
@@ -8,11 +10,37 @@
     position: fixed;
     right: 80px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) rotate(90deg);
     padding: 5px 10px;
     background-color: transparent;
     border: none;
     cursor: pointer;
+    transition: color 0.2s linear;
+}
+
+.hamburger-button::before {
+    @include pseudo;
+    left: -15px;
+    top: 40%;
+    transform: scaleX(2);
+    transform-origin: right;
+}
+
+.hamburger-button:hover::before {
+    transform: scaleX(1);
+    @include pseudo-hover;
+}
+
+.hamburger-button::after {
+    @include pseudo;
+    left: -15px;
+    top: 60%;
+    transform-origin: right;
+}
+
+.hamburger-button:hover::after {
+    transform: scaleX(2);
+    @include pseudo-hover;
 }
 
 .hamburger-button:hover {
@@ -21,4 +49,29 @@
 
 .hamburger-button--active {
     color: white;
+}
+
+.hamburger-button--active::before {
+    background-color: white;
+    top: 50%;
+    transform: none;
+    transform: rotate(-45deg);
+
+    transform-origin: center;
+}
+
+.hamburger-button--active::after {
+    background-color: white;
+    top: 50%;
+    transform: none;
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+
+.hamburger-button--active:hover::before {
+    transform: rotate(-45deg);
+}
+
+.hamburger-button--active:hover::after {
+    transform: rotate(45deg);
 }

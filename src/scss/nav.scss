@@ -9,6 +9,9 @@
     display: flex;
     align-items: center;
     transform: scaleX(0);
+    opacity: 0;
+    transform-origin: right;
+    transition: opacity 0.3s ease-in, transform 0.3s linear;
 
     &__ul {
         margin-left: 16vw;
@@ -42,4 +45,5 @@
 
 .nav--active {
     transform: none;
+    opacity: 1;
 }
