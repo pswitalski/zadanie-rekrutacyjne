@@ -1,0 +1,24 @@
+.hamburger-button {
+    z-index: 2;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: black;
+    position: fixed;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger-button:hover {
+    color: #5C5C5C;
+}
+
+.hamburger-button--active {
+    color: white;
+}

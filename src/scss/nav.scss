@@ -8,6 +8,7 @@
     z-index: 1;
     display: flex;
     align-items: center;
+    transform: scaleX(0);
 
     &__ul {
         margin-left: 16vw;
@@ -37,4 +38,8 @@
     &__a:hover {
         color: #5C5C5C;
     }
+}
+
+.nav--active {
+    transform: none;
 }
