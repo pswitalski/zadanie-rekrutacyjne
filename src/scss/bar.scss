@@ -14,8 +14,13 @@
         height: 100px;
     }
 
-    @media (max-height: 800px) and (max-width: 950px) {
-        display: none;
+    @media (max-height: 800px) and (max-width: 800px) {
+        position: static;
+    }
+
+    @media (max-width: 600px),
+    (max-height: 400px) {
+        position: static;
     }
 
     &__button-container {
@@ -103,6 +108,11 @@
 
         @media (max-width: 1200px) {
             font-size: 24px;
+        }
+
+        @media (max-width: 900px) {
+            font-size: 20px;
+            line-height: normal;
         }
     }
 
