@@ -5,10 +5,15 @@ const navLinks = document.querySelectorAll('.nav__a');
 let isMenuOpen = false;
 const timeouts = [];
 
-const handleOpenAndClose = () => {
+const handleClearTimeouts = () => {
     timeouts.forEach(timeout => {
         clearTimeout(timeout);
     })
+    timeouts.length = 0;
+}
+
+const handleOpenAndClose = () => {
+    handleClearTimeouts();
 
     isMenuOpen = navBtn.classList.contains('hamburger-button--active');
 
